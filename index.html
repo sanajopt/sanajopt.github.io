@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Portfolio for Sani Aji</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Research</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Conference</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Research</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Conference</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Projects</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Thailand</h3>
+      <p><b>I am having the time of my life here</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Poland</h3>
+      <p><b>I had the time of my life here</b></p>    
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">SANI AJI</h2>
+    <p class="w3-opacity"><i>I love to research</i></p>
+    <p class="w3-justify">Sani Aji received the B.Sc. degree in mathematics from Gombe State University, Nigeria, in 2015, and the two master’s degrees in interdisciplinary mathematics and mathematical modeling from the University of L’Aquila, Italy, and the University of Silesia in Katowice, Poland, respectively. He is currently pursuing the Ph.D. degree with the King Mongkut University of Technology Thonburi, Thailand. His research interests include iterative methods for solving system of nonlinear equations with applications to signal recovery, robotic motion control, image processing, machine learning, and computer vision.</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>My Brother</p>
+        <img src="https://pbs.twimg.com/profile_images/1069920073001910272/03AL-J8Y.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>My Home</p>
+        <img src="data:image/jpeg;base64,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" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Award</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSJNgk-OqtMzpwPMh16PfBF894F8RibOFU7g&usqp=CAU" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">CONFERENCE DATES</h2>
+      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
+      </ul>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>New York</b></p>
+            <p class="w3-opacity">Fri 27 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Paris</b></p>
+            <p class="w3-opacity">Sat 28 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>San Francisco</b></p>
+            <p class="w3-opacity">Sun 29 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
